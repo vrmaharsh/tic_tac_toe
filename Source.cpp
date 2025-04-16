@@ -1,5 +1,5 @@
 /*
- * Author: 2K22/MC/63
+ * Authors: 2K22/MC/63, 2K22/MC/67
  * Tic-Tac-Toe AI Implementation
  */
 
