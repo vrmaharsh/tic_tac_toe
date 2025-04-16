@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe AI - 2K22/MC/63</title>
+    <style>
+        /* Simple and clean styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Game board styling */
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 5px;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cell:hover {
+            background-color: #f0f0f0;
+        }
+
+        #status {
+            margin: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #restart {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        #restart:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tic Tac Toe with AI</h1>
+        <p>Implementation by: 2K22/MC/63</p>
+    </div>
+
+    <!-- Game board -->
+    <div class="board" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <div id="status">Your turn (X)</div>
+    <button id="restart">Restart Game</button>
+
+    <script src="script.js"></script>
+</body>
+</html> 
